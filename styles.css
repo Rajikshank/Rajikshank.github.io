@@ -1,0 +1,152 @@
+.name {
+  font-weight: 400;
+  font-size: 50px;
+}
+.name:hover {
+  color: rgb(250, 222, 65);
+  cursor: pointer;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Silkscreen", sans-serif;
+  font-style: normal;
+  background-color: rgb(99, 190, 190);
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-container {
+  max-width: 800px;
+
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.about-me-section {
+  font-weight: 100;
+  font-style: normal;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+
+  justify-items: center;
+  gap: 20px;
+}
+
+.nav-items > h2 {
+  background-color: rgb(250, 222, 65);
+  padding: 8px;
+  border-radius: 5px;
+  animation: float 6s ease-in-out infinite;
+
+  cursor: pointer;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    color: black;
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    color: white;
+  }
+}
+
+.items-main {
+
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.education-main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.education-content-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: max-content;
+  justify-content: space-between;
+  align-content: ;
+  height: 300px;
+  left: -7.5px;
+  top: px;
+}
+
+.timeline-bar {
+  background-color: rgb(250, 222, 65);
+  width: 5px;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  animation: grow 0.5s ease-in-out;
+}
+
+.white-dot {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  animation: roundgrow 0.5s ease-in-out;
+}
+
+.element-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+ 
+}
+
+@keyframes grow {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 250px;
+  }
+}
+
+@keyframes roundgrow {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+ 
+
+ 
+.text-container{
+display: flex;
+ 
+flex-direction: column;
+line-height: 0.8px;
+}
