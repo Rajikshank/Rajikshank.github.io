@@ -6,7 +6,7 @@ navitems = document.getElementsByClassName("nav-items");
 function changeContent(name) {
   switch (name) {
     case "Education Backround":
-      heading[0].innerHTML = `              <div class="education-main-container"> 
+      heading[0].innerHTML = `                            <div class="education-main-container"> 
 
                 <div class="timeline-bar">
                 
@@ -17,9 +17,9 @@ function changeContent(name) {
 
                   
                       <div class="text-container">
-                      <h4> Bsc(Hons)Software engineering </h2>
+                      <h4> Bsc(Hons) Software engineering </h2>
                      
-                     <p>sri lanka techno
+                     <p>sri lanka technological campus (2020-2024)
           
                      </p>
                       </div> 
@@ -28,7 +28,13 @@ function changeContent(name) {
                 
                       <div class="element-container">
                         <div class="white-dot"></div>
-                        <h4> Advanced Level </h2>
+                        <div class="text-container">
+                          <h4> Advanced level </h2>
+                         
+                         <p>Bt/Hinducollege Batticaloa 
+              
+                         </p>
+                          </div> 
                       
                         </div>
                         
@@ -40,6 +46,8 @@ function changeContent(name) {
                 
              
     </div>`;
+    case "My Projects": {
+    }
   }
 }
 
