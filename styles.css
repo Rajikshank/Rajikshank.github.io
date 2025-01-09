@@ -5,6 +5,7 @@
 .name:hover {
   color: rgb(250, 222, 65);
   cursor: pointer;
+ 
 }
 .name-container {
   display: flex;
@@ -47,6 +48,10 @@ body {
   background-color: rgb(250, 222, 65);
   padding: 8px;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 0.25px;
+  border-color: black;
+
   animation: float 6s ease-in-out infinite;
 
   cursor: pointer;

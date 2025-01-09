@@ -46,8 +46,11 @@ function changeContent(name) {
                 
              
     </div>`;
-    case "My Projects": {
-    }
+    console.log("education clicked")
+    break;
+    case "My Projects":
+      heading[0].innerHTML = "<div> Hiii</div>";
+      console.log("project clicked");
   }
 }
 
