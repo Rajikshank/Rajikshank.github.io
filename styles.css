@@ -5,7 +5,6 @@
 .name:hover {
   color: rgb(250, 222, 65);
   cursor: pointer;
- 
 }
 .name-container {
   display: flex;
@@ -40,7 +39,7 @@ body {
   display: flex;
   flex-direction: row;
 
-  justify-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -161,16 +160,47 @@ body {
   line-height: 0.2px;
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
-.text-container>p{
+.text-container > p {
   color: white;
 }
-.dynamic-content-container{
+.dynamic-content-container {
   min-height: 500px;
 }
 
-.project-section{
-  
+.card-container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.project-card-element {
+  background-color: rgb(245, 229, 143);
+  border-style: solid;
+  border-width: 0.25px;
+  border-color: rgb(126, 126, 126);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+.project-card-element:hover {
+  background-color: rgb(250, 222, 65);
+}
+
+.project-card-element > img {
+  max-width: 350px;
+  border-radius: 5px;
+}
+
+.project-card-element > img:hover {
+  filter: brightness(150%);
+  cursor: pointer;
 }

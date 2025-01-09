@@ -2,6 +2,27 @@ heading = document.getElementsByClassName("dynamic-content-container");
 navitems = document.getElementsByClassName("nav-items");
 
 // heading.addEventListener('')
+const projects = [
+  {
+    title: "chat app",
+    image:
+      "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
+  },
+  {
+    title: "ecommerce-app",
+    image:
+      "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
+  },
+  {
+    title: "blood bank management app",
+    image:
+      "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
+  },{
+    title: "Ai Powered Todo",
+    image:
+      "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
+  },
+];
 
 function changeContent(name) {
   switch (name) {
@@ -46,10 +67,25 @@ function changeContent(name) {
                 
              
     </div>`;
-    console.log("education clicked")
-    break;
+      console.log("education clicked");
+      break;
     case "My Projects":
-      heading[0].innerHTML = "<div> Hiii</div>";
+      heading[0].innerHTML = "<div class='card-container' > </div>";
+      let projectdiv = document.querySelector(".card-container");
+      let elem=""
+      projects.forEach((item) => {
+         elem += `<div class='project-card-element'> 
+        
+        <img  src=${item.image} />
+        <p> ${item.title} </p>
+        </div>`;
+        
+      });
+      projectdiv.innerHTML=elem;
+      break;
+      //   heading[0].innerHTML = `  <div class="project container">
+
+      //  </div>`;
       console.log("project clicked");
   }
 }
