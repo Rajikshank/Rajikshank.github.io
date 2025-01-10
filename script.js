@@ -17,7 +17,8 @@ const projects = [
     title: "blood bank management app",
     image:
       "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
-  },{
+  },
+  {
     title: "Ai Powered Todo",
     image:
       "https://github.com/Rajikshank/Cloud_application_development/raw/master/git.png?raw=true",
@@ -68,20 +69,20 @@ function changeContent(name) {
              
     </div>`;
       console.log("education clicked");
+     
       break;
     case "My Projects":
-      heading[0].innerHTML = "<div class='card-container' > </div>";
+      heading[0].innerHTML = "<div class='card-container  ' > </div>";
       let projectdiv = document.querySelector(".card-container");
-      let elem=""
+      let elem = "";
       projects.forEach((item) => {
-         elem += `<div class='project-card-element'> 
+        elem += `<div class='project-card-element holographic-card '> 
         
         <img  src=${item.image} />
         <p> ${item.title} </p>
         </div>`;
-        
       });
-      projectdiv.innerHTML=elem;
+      projectdiv.innerHTML = elem;
       break;
       //   heading[0].innerHTML = `  <div class="project container">
 
@@ -93,7 +94,10 @@ function changeContent(name) {
 console.log(navitems);
 
 for (let child of navitems[0].children) {
-  child.addEventListener("click", () => changeContent(child.innerText));
+  child.addEventListener("click", (e) => {
+   
+    changeContent(child.innerText);
+  });
   console.log(child);
 }
 
